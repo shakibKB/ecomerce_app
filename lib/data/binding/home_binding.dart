@@ -1,4 +1,4 @@
-import 'package:ecom/view/category_screen/controller/home_controller.dart';
+import 'package:ecom/view/home_screen/controller/home_controller.dart';
 import 'package:get/get.dart';
 
 class HomeBinding extends Bindings {

@@ -1,4 +1,5 @@
 
+import 'package:ecom/utility/app_color.dart';
 import 'package:flutter/material.dart';
 
 class CategoryCard extends StatelessWidget {
@@ -46,13 +47,13 @@ class CategoryCard extends StatelessWidget {
               padding: const EdgeInsets.only(left: 10),
               child:  Row(
                 children: [
-                  Text(name,style:const TextStyle(fontWeight: FontWeight.w600,fontSize: 15,color: Colors.white),),
+                  Text(name,style: const TextStyle(fontWeight: FontWeight.w600,fontSize: 15,color:AppColors.textWhite),),
                   const SizedBox(width: 6,),
                   rating ==null ?const Center():Row(
                     children: [
                      const Icon(Icons.star,color: Colors.amber,size: 15,),
 
-                      Text("$rating",style:const TextStyle(fontWeight: FontWeight.w500,fontSize: 13,color: Colors.white),)
+                      Text("$rating",style:const TextStyle(fontWeight: FontWeight.w500,fontSize: 13,color: AppColors.textWhite),)
                     ],),
                 ],
               ),

@@ -1,6 +1,5 @@
 
 import 'package:get/get.dart';
-
 import '../../../utility/assets.dart';
 
 class HomeController extends GetxController{

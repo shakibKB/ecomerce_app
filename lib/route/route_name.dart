@@ -1,5 +1,7 @@
 class AppRoute{
-  static const String category = "/";
-  static const String singleCategory = "/single-category";
-  static const String allProduct = "/all-product";
+  static const String homeScreen = "/";
+  static const String singleProduct = "/single_product";
+  static const String categoryScreen = "/category_screen";
+  static const String cartScreen = "/cart_screen";
+  static const String navScreen = "/nav_screen";
 }

@@ -1,11 +1,10 @@
 import 'package:ecom/widget/app_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../../../utility/assets.dart';
 
-class SingleCategory extends StatelessWidget {
-  const SingleCategory({super.key});
+class SingleProduct extends StatelessWidget {
+  const SingleProduct({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +33,8 @@ class SingleCategory extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+
+                //name
                 Text("Nike Air",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600,color: Colors.white),),
                 SizedBox(width: 10,),
                 Row(
@@ -44,13 +45,46 @@ class SingleCategory extends StatelessWidget {
                   ],),
               ],
             ),
+
+           //price
            const Text("\$${2200}",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: Colors.white),),
             const SizedBox(height: 10,),
             const Text("Nike Sneakers For Men Price | The price range for Nike sneakers for men is diverse."
                 " Reflecting the brand’s extensive collection that caters to various styles, preferences, "
                 "and performance needs. Nike offers a wide array of sneakers, from classic designs to"
                 " cutting-edge models equipped with innovative technologies.",
-              style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500,color: Colors.white),),
+              style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500,color: Colors.white),
+            ),
+
+            SizedBox(height: 20,),
+            Row(
+              children: [
+                InkWell(
+                  onTap: (){},
+                  child: Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.brown),
+                    ),
+                    child: Center(child: Icon(Icons.remove,color: Colors.white,)),
+                  ),
+                ),
+                InkWell(
+                  onTap: (){},
+                  child: Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.brown),
+                    ),
+                    child: Center(child: Icon(Icons.remove,color: Colors.white,)),
+                  ),
+                ),
+              ],
+            ),
 
 
 
