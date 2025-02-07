@@ -1,3 +1,4 @@
+import 'package:ecom/route/route_name.dart';
 import 'package:ecom/route/route_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: RoutePage.routes,
-      initialRoute:"/",
+      initialRoute:AppRoute.navScreen,
 
     );
   }
