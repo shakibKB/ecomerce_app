@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'route/route_name.dart';
 import 'route/route_page.dart';
 import 'utility/app_colors.dart';
+import 'view/auth/controller/auth_controller.dart';
 import 'view/cart/controller/cart_controller.dart';
 import 'view/category_screen/controller/category_controller.dart';
 import 'view/dashboard/controller/bottom_nav_controller.dart';
@@ -14,6 +15,7 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
   // Initialize Feature MVP Controllers
+  Get.put(AuthController());
   Get.put(BottomNavController());
   Get.put(HomeController());
   Get.put(CategoryController());
