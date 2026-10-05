@@ -1,3 +1,8 @@
-class AppRoute{
-  static const String category = "/";
+class AppRoute {
+  static const String dashboard = "/";
+  static const String home = "/home";
+  static const String category = "/category";
+  static const String cart = "/cart";
+  static const String wishlist = "/wishlist";
+  static const String profile = "/profile";
 }
