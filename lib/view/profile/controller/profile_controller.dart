@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../../route/route_name.dart';
 import '../../../utility/app_colors.dart';
 import '../../../utility/app_snackbar.dart';
 import '../model/user_profile_model.dart';
@@ -40,6 +41,7 @@ class ProfileController extends GetxController {
           "Logged Out",
           "You have been successfully logged out",
         );
+        Get.offAllNamed(AppRoute.login);
       },
     );
   }
